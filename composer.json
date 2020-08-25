@@ -1,5 +1,5 @@
 {
-	"name": "php7bundle/jwt",
+	"name": "zncrypt/jwt",
 	"type": "extension",
 	"license": "MIT",
 	"authors": [
