@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Strategies\Func\Handlers;
+namespace ZnCrypt\Jwt\Domain\Strategies\Func\Handlers;
 
 interface HandlerInterface
 {

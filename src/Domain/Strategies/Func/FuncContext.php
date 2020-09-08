@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Strategies\Func;
+namespace ZnCrypt\Jwt\Domain\Strategies\Func;
 
-use PhpBundle\Crypt\Domain\Enums\EncryptFunctionEnum;
-use PhpBundle\Jwt\Domain\Strategies\Func\Handlers\HandlerInterface;
-use PhpBundle\Jwt\Domain\Strategies\Func\Handlers\HmacStrategy;
-use PhpBundle\Jwt\Domain\Strategies\Func\Handlers\OpenSslStrategy;
-use PhpLab\Core\Patterns\Strategy\Base\BaseStrategyContextHandlers;
+use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
+use ZnCrypt\Jwt\Domain\Strategies\Func\Handlers\HandlerInterface;
+use ZnCrypt\Jwt\Domain\Strategies\Func\Handlers\HmacStrategy;
+use ZnCrypt\Jwt\Domain\Strategies\Func\Handlers\OpenSslStrategy;
+use ZnCore\Base\Patterns\Strategy\Base\BaseStrategyContextHandlers;
 
 /**
  * @property-read HandlerInterface $strategyInstance

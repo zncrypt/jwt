@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Helpers;
+namespace ZnCrypt\Jwt\Domain\Helpers;
 
 use domain\union\v1\entities\MemberEntity;
 use php7rails\app\domain\helpers\EnvService;
-use PhpBundle\Crypt\Domain\Enums\EncryptAlgorithmEnum;
-use PhpBundle\Crypt\Domain\Enums\EncryptFunctionEnum;
+use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
+use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
 
 class SignatureHelper
 {

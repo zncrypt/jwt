@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Entities;
+namespace ZnCrypt\Jwt\Domain\Entities;
 
 /**
  * @property $token string

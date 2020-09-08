@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Interfaces\Services;
+namespace ZnCrypt\Jwt\Domain\Interfaces\Services;
 
-use PhpBundle\Jwt\Domain\Entities\JwtEntity;
+use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
 
 interface JwtServiceInterface
 {

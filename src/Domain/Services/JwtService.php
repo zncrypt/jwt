@@ -1,13 +1,13 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Services;
+namespace ZnCrypt\Jwt\Domain\Services;
 
-use PhpBundle\Jwt\Domain\Entities\JwtEntity;
-use PhpBundle\Jwt\Domain\Helpers\JwtEncodeHelper;
-use PhpBundle\Jwt\Domain\Helpers\JwtHelper;
-use PhpBundle\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
-use PhpBundle\Jwt\Domain\Interfaces\Services\JwtServiceInterface;
-use PhpBundle\Jwt\Domain\Libs\ProfileContainer;
+use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
+use ZnCrypt\Jwt\Domain\Helpers\JwtEncodeHelper;
+use ZnCrypt\Jwt\Domain\Helpers\JwtHelper;
+use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
+use ZnCrypt\Jwt\Domain\Interfaces\Services\JwtServiceInterface;
+use ZnCrypt\Jwt\Domain\Libs\ProfileContainer;
 
 class JwtService implements JwtServiceInterface
 {

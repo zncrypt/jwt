@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Entities;
+namespace ZnCrypt\Jwt\Domain\Entities;
 
-use PhpBundle\Jwt\Domain\Enums\JwtAlgorithmEnum;
+use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
 
 /**
  * Class JwtHeaderEntity
- * @package PhpBundle\Crypt\Domain\Entities
+ * @package ZnCrypt\Base\Domain\Entities
  *
  * @property $typ string
  * @property $alg string

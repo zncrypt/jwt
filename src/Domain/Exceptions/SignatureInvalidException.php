@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Exceptions;
+namespace ZnCrypt\Jwt\Domain\Exceptions;
 
 class SignatureInvalidException extends \UnexpectedValueException
 {

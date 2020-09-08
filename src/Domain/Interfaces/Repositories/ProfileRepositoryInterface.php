@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Interfaces\Repositories;
+namespace ZnCrypt\Jwt\Domain\Interfaces\Repositories;
 
 interface ProfileRepositoryInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Enums;
+namespace ZnCrypt\Jwt\Domain\Enums;
 
-use PhpLab\Core\Domain\Base\BaseEnum;
+use ZnCore\Base\Domain\Base\BaseEnum;
 
 class EncryptKeyTypeEnum extends BaseEnum
 {

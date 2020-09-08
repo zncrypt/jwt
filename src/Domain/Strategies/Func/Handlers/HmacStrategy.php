@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Strategies\Func\Handlers;
+namespace ZnCrypt\Jwt\Domain\Strategies\Func\Handlers;
 
-use PhpBundle\Jwt\Domain\Helpers\EncryptHelper;
+use ZnCrypt\Jwt\Domain\Helpers\EncryptHelper;
 
 class HmacStrategy implements HandlerInterface
 {

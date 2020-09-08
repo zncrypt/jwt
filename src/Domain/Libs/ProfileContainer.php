@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Libs;
+namespace ZnCrypt\Jwt\Domain\Libs;
 
 use php7extension\psr\container\BaseContainer;
-//use PhpLab\Core\Legacy\Traits\ClassAttribute\MagicSetTrait;
-use PhpBundle\Jwt\Domain\Entities\JwtProfileEntity;
-use PhpBundle\Jwt\Domain\Helpers\ConfigProfileHelper;
+//use ZnCore\Base\Legacy\Traits\ClassAttribute\MagicSetTrait;
+use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
+use ZnCrypt\Jwt\Domain\Helpers\ConfigProfileHelper;
 
 class ProfileContainer extends BaseContainer
 {

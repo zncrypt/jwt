@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Helpers;
+namespace ZnCrypt\Jwt\Domain\Helpers;
 
 use DomainException;
 

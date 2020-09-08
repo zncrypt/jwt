@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Helpers;
+namespace ZnCrypt\Jwt\Domain\Helpers;
 
 use php7rails\app\domain\helpers\EnvService;
 use php7rails\extension\common\helpers\ClassHelper;
-use PhpLab\Core\Exceptions\InvalidConfigException;
-use PhpBundle\Crypt\Domain\Entities\ConfigEntity;
-use PhpBundle\Jwt\Domain\Entities\ProfileEntity;
+use ZnCore\Base\Exceptions\InvalidConfigException;
+use ZnCrypt\Base\Domain\Entities\ConfigEntity;
+use ZnCrypt\Jwt\Domain\Entities\ProfileEntity;
 
 class ConfigProfileHelper
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Dto;
+namespace ZnCrypt\Jwt\Domain\Dto;
 
 /**
  * Class TokenDto
- * @package PhpBundle\Crypt\Domain\Dto
+ * @package ZnCrypt\Base\Domain\Dto
  *
  * @property $header_encoded
  * @property $payload_encoded

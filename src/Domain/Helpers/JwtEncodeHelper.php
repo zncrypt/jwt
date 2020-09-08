@@ -1,22 +1,22 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Helpers;
+namespace ZnCrypt\Jwt\Domain\Helpers;
 
 use DomainException;
 use InvalidArgumentException;
-use PhpBundle\Crypt\Domain\Helpers\SafeBase64Helper;
-use PhpLab\Core\Legacy\Yii\Helpers\ArrayHelper;
+use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
+use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use php7rails\extension\jwt\entities\ProfileEntity;
 use php7rails\extension\jwt\entities\TokenEntity;
-use PhpBundle\Jwt\Domain\Dto\TokenDto;
-use PhpBundle\Jwt\Domain\Entities\JwtHeaderEntity;
-use PhpBundle\Jwt\Domain\Entities\JwtProfileEntity;
-use PhpBundle\Jwt\Domain\Entities\KeyEntity;
-use PhpBundle\Crypt\Domain\Enums\EncryptFunctionEnum;
-use PhpBundle\Jwt\Domain\Enums\EncryptKeyTypeEnum;
-use PhpBundle\Jwt\Domain\Enums\JwtAlgorithmEnum;
-use PhpBundle\Jwt\Domain\Exceptions\SignatureInvalidException;
-use PhpBundle\Jwt\Domain\Strategies\Func\FuncContext;
+use ZnCrypt\Jwt\Domain\Dto\TokenDto;
+use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
+use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
+use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
+use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
+use ZnCrypt\Jwt\Domain\Enums\EncryptKeyTypeEnum;
+use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
+use ZnCrypt\Jwt\Domain\Exceptions\SignatureInvalidException;
+use ZnCrypt\Jwt\Domain\Strategies\Func\FuncContext;
 
 class JwtEncodeHelper
 {

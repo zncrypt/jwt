@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Entities;
+namespace ZnCrypt\Jwt\Domain\Entities;
 
-use PhpBundle\Crypt\Domain\Enums\EncryptAlgorithmEnum;
+use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
 
 /**
  * Class ConfigEntity
- * @package PhpBundle\Crypt\Domain\Entities
+ * @package ZnCrypt\Base\Domain\Entities
  *
  * @property KeyEntity $key
  * @property string $algorithm

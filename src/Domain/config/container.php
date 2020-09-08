@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'PhpBundle\\Jwt\\Domain\\Interfaces\\Repositories\\ProfileRepositoryInterface' => 'PhpBundle\\Jwt\\Domain\\Repositories\\Config\\ProfileRepository',
-    'PhpBundle\\Jwt\\Domain\\Interfaces\\Services\\JwtServiceInterface' => 'PhpBundle\\Jwt\\Domain\\Services\\JwtService',
+    'ZnCrypt\\Jwt\\Domain\\Interfaces\\Repositories\\ProfileRepositoryInterface' => 'ZnCrypt\\Jwt\\Domain\\Repositories\\Config\\ProfileRepository',
+    'ZnCrypt\\Jwt\\Domain\\Interfaces\\Services\\JwtServiceInterface' => 'ZnCrypt\\Jwt\\Domain\\Services\\JwtService',
 ];

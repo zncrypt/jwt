@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Enums;
+namespace ZnCrypt\Jwt\Domain\Enums;
 
-use PhpBundle\Crypt\Domain\Enums\EncryptAlgorithmEnum;
-use PhpBundle\Crypt\Domain\Enums\EncryptFunctionEnum;
-use PhpLab\Core\Domain\Base\BaseEnum;
+use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
+use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
+use ZnCore\Base\Domain\Base\BaseEnum;
 
 class JwtAlgorithmEnum extends BaseEnum
 {

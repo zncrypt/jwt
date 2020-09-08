@@ -1,13 +1,13 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Repositories\Config;
+namespace ZnCrypt\Jwt\Domain\Repositories\Config;
 
-use PhpBundle\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
-use PhpLab\Core\Domain\Helpers\EntityHelper;
-use PhpLab\Core\Enums\Measure\TimeEnum;
-use PhpBundle\Jwt\Domain\Entities\JwtProfileEntity;
-use PhpBundle\Jwt\Domain\Entities\KeyEntity;
-use PhpLab\Core\Libs\Env\DotEnvHelper;
+use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
+use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Enums\Measure\TimeEnum;
+use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
+use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
+use ZnCore\Base\Libs\Env\DotEnvHelper;
 
 class ProfileRepository implements ProfileRepositoryInterface
 {

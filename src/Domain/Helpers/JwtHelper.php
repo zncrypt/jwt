@@ -1,17 +1,17 @@
 <?php
 
-namespace PhpBundle\Jwt\Domain\Helpers;
+namespace ZnCrypt\Jwt\Domain\Helpers;
 
-use PhpLab\Core\Legacy\Yii\Helpers\ArrayHelper;
+use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use php7rails\app\domain\helpers\EnvService;
-use PhpLab\Core\Domain\Helpers\EntityHelper;
-use PhpLab\Core\Domain\Libs\Alias;
-use PhpLab\Core\Helpers\StringHelper;
-use PhpBundle\Jwt\Domain\Entities\JwtEntity;
-use PhpBundle\Jwt\Domain\Entities\JwtHeaderEntity;
-use PhpBundle\Jwt\Domain\Entities\JwtProfileEntity;
-use PhpBundle\Jwt\Domain\Entities\JwtTokenEntity;
-use PhpBundle\Jwt\Domain\Enums\JwtAlgorithmEnum;
+use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Domain\Libs\Alias;
+use ZnCore\Base\Helpers\StringHelper;
+use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
+use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
+use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
+use ZnCrypt\Jwt\Domain\Entities\JwtTokenEntity;
+use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
 use UnexpectedValueException;
 
 class JwtHelper
