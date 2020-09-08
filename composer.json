@@ -15,7 +15,9 @@
 	"autoload": {
 		"psr-4": {
 			"PhpBundle\\Jwt\\": "src",
-			"PhpBundle\\Jwt\\Tests\\": "tests"
+			"PhpBundle\\Jwt\\Tests\\": "tests",
+			"ZnCrypt\\Jwt\\": "src",
+			"ZnCrypt\\Jwt\\Tests\\": "tests"
 		}
 	}
 }
