@@ -2,7 +2,7 @@
 
 namespace ZnCrypt\Jwt\Domain\Enums;
 
-use ZnCore\Base\Domain\Base\BaseEnum;
+use ZnCore\Domain\Base\BaseEnum;
 
 class EncryptKeyTypeEnum extends BaseEnum
 {

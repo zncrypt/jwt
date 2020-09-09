@@ -3,7 +3,7 @@
 namespace ZnCrypt\Jwt\Domain\Repositories\Config;
 
 use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Helpers\EntityHelper;
 use ZnCore\Base\Enums\Measure\TimeEnum;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
 use ZnCrypt\Jwt\Domain\Entities\KeyEntity;

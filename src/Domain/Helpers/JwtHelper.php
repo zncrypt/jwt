@@ -4,8 +4,8 @@ namespace ZnCrypt\Jwt\Domain\Helpers;
 
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use php7rails\app\domain\helpers\EnvService;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
-use ZnCore\Base\Domain\Libs\Alias;
+use ZnCore\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Libs\Alias;
 use ZnCore\Base\Helpers\StringHelper;
 use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
