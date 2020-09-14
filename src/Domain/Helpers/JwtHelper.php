@@ -2,6 +2,7 @@
 
 namespace ZnCrypt\Jwt\Domain\Helpers;
 
+use ZnCore\Base\Helpers\ClassHelper;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use php7rails\app\domain\helpers\EnvService;
 use ZnCore\Domain\Helpers\EntityHelper;
@@ -38,7 +39,8 @@ class JwtHelper
         //$profileEntity = ConfigProfileHelper::load($profileName, JwtProfileEntity::class);
         $tokenDto = JwtEncodeHelper::decode($token);
         JwtEncodeHelper::verifyTokenDto($tokenDto, $profileEntity);
-        $jwtEntity = new JwtEntity($tokenDto->payload);
+        $jwtEntity = new JwtEntity;
+        ClassHelper::configure($jwtEntity, $tokenDto->payload);
         $jwtEntity->token = $token;
         return $jwtEntity;
     }
