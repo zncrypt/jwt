@@ -3,7 +3,7 @@
 namespace ZnCrypt\Jwt\Domain\Libs;
 
 use php7extension\psr\container\BaseContainer;
-//use ZnCore\Base\Legacy\Traits\ClassAttribute\MagicSetTrait;
+//use ZnCore\Base\Traits\ClassAttribute\MagicSetTrait;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
 use ZnCrypt\Jwt\Domain\Helpers\ConfigProfileHelper;
 
