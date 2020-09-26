@@ -4,9 +4,8 @@ namespace ZnCrypt\Jwt\Domain\Enums;
 
 use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
 use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
-use ZnCore\Domain\Base\BaseEnum;
 
-class JwtAlgorithmEnum extends BaseEnum
+class JwtAlgorithmEnum
 {
 
     const HS256 = 'HS256';

@@ -2,9 +2,7 @@
 
 namespace ZnCrypt\Jwt\Domain\Enums;
 
-use ZnCore\Domain\Base\BaseEnum;
-
-class EncryptKeyTypeEnum extends BaseEnum
+class EncryptKeyTypeEnum
 {
 
     const PRIVATE = 'private';
