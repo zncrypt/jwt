@@ -5,6 +5,7 @@ namespace ZnCrypt\Jwt\Domain\Services;
 use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
 use ZnCrypt\Jwt\Domain\Helpers\JwtEncodeHelper;
 use ZnCrypt\Jwt\Domain\Helpers\JwtHelper;
+use ZnCrypt\Jwt\Domain\Helpers\JwtModelHelper;
 use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
 use ZnCrypt\Jwt\Domain\Interfaces\Services\JwtServiceInterface;
 use ZnCrypt\Jwt\Domain\Libs\ProfileContainer;
@@ -35,7 +36,7 @@ class JwtService implements JwtServiceInterface
 
     public function decode(string $token)
     {
-        $jwtEntity = JwtEncodeHelper::decode($token);
+        $jwtEntity = JwtModelHelper::parseToken($token);
         return $jwtEntity;
     }
 

@@ -21,6 +21,12 @@ use ZnCrypt\Jwt\Domain\Strategies\Func\FuncContext;
 class JwtEncodeHelper
 {
 
+    /**
+     * @param string $jwt
+     * @return TokenDto
+     * @deprecated
+     * @see JwtModelHelper::parseToken
+     */
     public static function decode(string $jwt): TokenDto
     {
         $tokenDto = JwtModelHelper::parseToken($jwt);
