@@ -6,8 +6,6 @@ use DomainException;
 use InvalidArgumentException;
 use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
-use php7rails\extension\jwt\entities\ProfileEntity;
-use php7rails\extension\jwt\entities\TokenEntity;
 use ZnCrypt\Jwt\Domain\Dto\TokenDto;
 use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;

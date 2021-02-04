@@ -3,7 +3,6 @@
 namespace ZnCrypt\Jwt\Domain\Helpers;
 
 use domain\union\v1\entities\MemberEntity;
-use php7rails\app\domain\helpers\EnvService;
 use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
 use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
 

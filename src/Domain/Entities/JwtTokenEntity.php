@@ -3,10 +3,6 @@
 namespace ZnCrypt\Jwt\Domain\Entities;
 
 /**
- * Class JwtTokenEntity
- *
- * @package php7rails\extension\jwt\entities
- *
  * @property $header array
  * @property $payload array
  * @property $sig string

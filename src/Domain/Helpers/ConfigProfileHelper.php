@@ -2,9 +2,8 @@
 
 namespace ZnCrypt\Jwt\Domain\Helpers;
 
-use php7rails\app\domain\helpers\EnvService;
-use php7rails\extension\common\helpers\ClassHelper;
 use ZnCore\Base\Exceptions\InvalidConfigException;
+use ZnCore\Base\Helpers\DeprecateHelper;
 use ZnCrypt\Base\Domain\Entities\ConfigEntity;
 use ZnCrypt\Jwt\Domain\Entities\ProfileEntity;
 
@@ -13,6 +12,7 @@ class ConfigProfileHelper
 
     public static function load(string $profile, $profileEntityClass = ProfileEntity::class): ProfileEntity
     {
+        DeprecateHelper::hardThrow();
         $config = EnvService::get('encrypt.profiles.' . $profile);
         $profileEntity = self::createInstanse($config, $profileEntityClass);
         return $profileEntity;

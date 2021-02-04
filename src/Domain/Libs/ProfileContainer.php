@@ -2,10 +2,10 @@
 
 namespace ZnCrypt\Jwt\Domain\Libs;
 
-use php7extension\psr\container\BaseContainer;
-//use ZnCore\Base\Traits\ClassAttribute\MagicSetTrait;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
 use ZnCrypt\Jwt\Domain\Helpers\ConfigProfileHelper;
+
+//use ZnCore\Base\Traits\ClassAttribute\MagicSetTrait;
 
 class ProfileContainer extends BaseContainer
 {
