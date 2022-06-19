@@ -6,7 +6,7 @@ use ZnCore\Base\Helpers\ClassHelper;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use ZnCore\Domain\Helpers\EntityHelper;
 use ZnCore\Domain\Libs\Alias;
-use ZnCore\Base\Helpers\StringHelper;
+use ZnCore\Base\Libs\Text\Helpers\StringHelper;
 use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
