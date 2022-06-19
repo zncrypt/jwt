@@ -2,17 +2,17 @@
 
 namespace ZnCrypt\Jwt\Domain\Helpers;
 
+use Symfony\Component\Uid\Uuid;
+use UnexpectedValueException;
 use ZnCore\Base\Helpers\ClassHelper;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use ZnCore\Domain\Helpers\EntityHelper;
 use ZnCore\Domain\Libs\Alias;
-use ZnCore\Base\Libs\Text\Helpers\StringHelper;
 use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtTokenEntity;
 use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
-use UnexpectedValueException;
 
 class JwtHelper
 {
@@ -28,7 +28,7 @@ class JwtHelper
     public static function sign(JwtEntity $jwtEntity, JwtProfileEntity $profileEntity, $keyId = null): string
     {
         //$profileEntity = ConfigProfileHelper::load($profileName, JwtProfileEntity::class);
-        $keyId = $keyId ?: StringHelper::genUuid();
+        $keyId = $keyId ?: Uuid::v4()->toRfc4122();
         $token = self::signToken($jwtEntity, $profileEntity, $keyId);
         return $token;
     }
@@ -48,7 +48,7 @@ class JwtHelper
     {
         $tokenDto = JwtModelHelper::parseToken($jwt);
         $jwtTokenEntity = new JwtTokenEntity;
-        $jwtTokenEntity->header = (array) $tokenDto->header;
+        $jwtTokenEntity->header = (array)$tokenDto->header;
         $jwtTokenEntity->payload = $tokenDto->payload;
         $jwtTokenEntity->sig = $tokenDto->signature;
         return $jwtTokenEntity;
@@ -61,7 +61,7 @@ class JwtHelper
         if (null === $object) {
             throw new UnexpectedValueException('Invalid encoding');
         }
-        return (array) $object;
+        return (array)$object;
     }
 
     private static function validateHeader(JwtHeaderEntity $headerEntity, JwtProfileEntity $profileEntity)
@@ -70,15 +70,15 @@ class JwtHelper
         if (empty($headerEntity->alg)) {
             throw new UnexpectedValueException('Empty algorithm');
         }
-        if ( ! JwtAlgorithmEnum::isSupported($headerEntity->alg)) {
+        if (!JwtAlgorithmEnum::isSupported($headerEntity->alg)) {
             throw new UnexpectedValueException('Algorithm not supported');
         }
-        if ( ! in_array($headerEntity->alg, $profileEntity->allowed_algs)) {
+        if (!in_array($headerEntity->alg, $profileEntity->allowed_algs)) {
             throw new UnexpectedValueException('Algorithm not allowed');
         }
         if (is_array($key) || $key instanceof \ArrayAccess) {
             if (isset($headerEntity->kid)) {
-                if ( ! isset($key[$headerEntity->kid])) {
+                if (!isset($key[$headerEntity->kid])) {
                     throw new UnexpectedValueException('"kid" invalid, unable to lookup correct key');
                 }
                 //$key = $key[$headerEntity->kid];
@@ -93,7 +93,7 @@ class JwtHelper
         if ($profileEntity->audience) {
             $jwtEntity->audience = ArrayHelper::merge($jwtEntity->audience, $profileEntity->audience);
         }
-        if ( ! $jwtEntity->expire_at && $profileEntity->life_time) {
+        if (!$jwtEntity->expire_at && $profileEntity->life_time) {
             $jwtEntity->expire_at = time() + $profileEntity->life_time;
         }
         $data = self::entityToToken($jwtEntity);
