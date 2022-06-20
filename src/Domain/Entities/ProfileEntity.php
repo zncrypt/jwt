@@ -18,10 +18,10 @@ class ProfileEntity
     public $algorithm = EncryptAlgorithmEnum::SHA256;
 
 
-    public function fieldType()
+    /*public function fieldType()
     {
         return [
             'key' => KeyEntity::class,
         ];
-    }
+    }*/
 }

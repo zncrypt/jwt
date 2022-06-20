@@ -14,10 +14,10 @@ class JwtTokenEntity
     public $payload;
     public $sig;
 
-    public function fieldType()
+    /*public function fieldType()
     {
         return [
             'header' => JwtHeaderEntity::class,
         ];
-    }
+    }*/
 }
