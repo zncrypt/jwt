@@ -7,7 +7,7 @@ use UnexpectedValueException;
 use ZnCore\Base\Helpers\ClassHelper;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
-use ZnCore\Domain\Libs\Alias;
+use ZnCore\Base\Libs\Arr\Libs\Alias;
 use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
