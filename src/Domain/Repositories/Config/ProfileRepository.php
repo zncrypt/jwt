@@ -3,7 +3,7 @@
 namespace ZnCrypt\Jwt\Domain\Repositories\Config;
 
 use ZnCore\Base\Enums\Measure\TimeEnum;
-use ZnCore\Base\Libs\DotEnv\DotEnvFacade;
+use ZnCore\Base\Libs\DotEnv\Libs\DotEnvMap;
 use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
 use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
@@ -14,7 +14,7 @@ class ProfileRepository implements ProfileRepositoryInterface
 
     public function oneByName(string $profileName)
     {
-        $prifile = DotEnvFacade::get('jwt.profiles.' . $profileName);
+        $prifile = DotEnvMap::get('jwt.profiles.' . $profileName);
         $keyEntity = new KeyEntity;
         EntityHelper::setAttributes($keyEntity, $prifile['key']);
         $profileEntity = new JwtProfileEntity;
