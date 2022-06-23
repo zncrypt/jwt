@@ -2,7 +2,7 @@
 
 namespace ZnCrypt\Jwt\Domain\Entities;
 
-use ZnCore\Base\Measure\Enums\TimeEnum;
+use ZnCore\Base\Time\Enums\TimeEnum;
 use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
 use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
 use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
