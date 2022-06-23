@@ -2,7 +2,7 @@
 
 namespace ZnCrypt\Jwt\Domain\Repositories\Config;
 
-use ZnCore\Base\Enums\Measure\TimeEnum;
+use ZnCore\Base\Libs\Measure\Enums\TimeEnum;
 use ZnCore\Base\Libs\DotEnv\Domain\Libs\DotEnvMap;
 use ZnCore\Domain\Entity\Helpers\EntityHelper;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
