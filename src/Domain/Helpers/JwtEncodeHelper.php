@@ -5,7 +5,7 @@ namespace ZnCrypt\Jwt\Domain\Helpers;
 use DomainException;
 use InvalidArgumentException;
 use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
-use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
+use ZnCore\Base\Libs\Arr\Helpers\ArrayHelper;
 use ZnCrypt\Jwt\Domain\Dto\TokenDto;
 use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;

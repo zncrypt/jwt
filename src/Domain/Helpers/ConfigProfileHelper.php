@@ -2,7 +2,7 @@
 
 namespace ZnCrypt\Jwt\Domain\Helpers;
 
-use ZnCore\Base\Exceptions\InvalidConfigException;
+use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
 use ZnCore\Base\Libs\Develop\Helpers\DeprecateHelper;
 use ZnCrypt\Base\Domain\Entities\ConfigEntity;
 use ZnCrypt\Jwt\Domain\Entities\ProfileEntity;
