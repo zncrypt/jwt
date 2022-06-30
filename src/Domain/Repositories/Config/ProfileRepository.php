@@ -12,7 +12,7 @@ use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
 class ProfileRepository implements ProfileRepositoryInterface
 {
 
-    public function oneByName(string $profileName)
+    public function findOneByName(string $profileName)
     {
         $prifile = DotEnvMap::get('jwt.profiles.' . $profileName);
         $keyEntity = new KeyEntity;

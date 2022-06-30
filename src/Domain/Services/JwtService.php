@@ -22,14 +22,14 @@ class JwtService implements JwtServiceInterface
 
     public function sign(JwtEntity $jwtEntity, string $profileName): string
     {
-        $profileEntity = $this->profileRepository->oneByName($profileName);
+        $profileEntity = $this->profileRepository->findOneByName($profileName);
         $token = JwtHelper::sign($jwtEntity, $profileEntity);
         return $token;
     }
 
     public function verify(string $token, string $profileName): JwtEntity
     {
-        $profileEntity = $this->profileRepository->oneByName($profileName);
+        $profileEntity = $this->profileRepository->findOneByName($profileName);
         $jwtEntity = JwtHelper::decode($token, $profileEntity);
         return $jwtEntity;
     }
