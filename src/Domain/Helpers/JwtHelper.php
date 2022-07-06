@@ -4,10 +4,10 @@ namespace ZnCrypt\Jwt\Domain\Helpers;
 
 use Symfony\Component\Uid\Uuid;
 use UnexpectedValueException;
-use ZnCore\Base\Instance\Helpers\ClassHelper;
-use ZnCore\Base\Arr\Helpers\ArrayHelper;
+use ZnCore\Instance\Helpers\ClassHelper;
+use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnCore\Entity\Helpers\EntityHelper;
-use ZnCore\Base\Arr\Libs\Alias;
+use ZnCore\Arr\Libs\Alias;
 use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
