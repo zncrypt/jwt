@@ -2,12 +2,12 @@
 
 namespace ZnCrypt\Jwt\Domain\Repositories\Config;
 
-use ZnLib\Components\Time\Enums\TimeEnum;
+use ZnCore\Code\Helpers\PropertyHelper;
 use ZnCore\DotEnv\Domain\Libs\DotEnvMap;
-use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
 use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
 use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
+use ZnLib\Components\Time\Enums\TimeEnum;
 
 class ProfileRepository implements ProfileRepositoryInterface
 {
@@ -16,7 +16,7 @@ class ProfileRepository implements ProfileRepositoryInterface
     {
         $prifile = DotEnvMap::get('jwt.profiles.' . $profileName);
         $keyEntity = new KeyEntity;
-        EntityHelper::setAttributes($keyEntity, $prifile['key']);
+        PropertyHelper::setAttributes($keyEntity, $prifile['key']);
         $profileEntity = new JwtProfileEntity;
         $profileEntity->name = $profileName;
         $profileEntity->key = $keyEntity;
