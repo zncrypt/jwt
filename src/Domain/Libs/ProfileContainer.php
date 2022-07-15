@@ -7,7 +7,7 @@ use ZnCrypt\Jwt\Domain\Helpers\ConfigProfileHelper;
 
 //use ZnCore\Base\Traits\ClassAttribute\MagicSetTrait;
 
-class ProfileContainer extends BaseContainer
+class ProfileContainer //extends BaseContainer
 {
 
     //use MagicSetTrait;
