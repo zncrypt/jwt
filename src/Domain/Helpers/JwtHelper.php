@@ -6,7 +6,7 @@ use Symfony\Component\Uid\Uuid;
 use UnexpectedValueException;
 use ZnCore\Instance\Helpers\ClassHelper;
 use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Entity\Helpers\EntityHelper;
+use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnCore\Arr\Libs\Alias;
 use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
 use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;

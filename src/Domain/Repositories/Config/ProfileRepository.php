@@ -4,7 +4,7 @@ namespace ZnCrypt\Jwt\Domain\Repositories\Config;
 
 use ZnLib\Components\Time\Enums\TimeEnum;
 use ZnCore\DotEnv\Domain\Libs\DotEnvMap;
-use ZnCore\Entity\Helpers\EntityHelper;
+use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
 use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
 use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
